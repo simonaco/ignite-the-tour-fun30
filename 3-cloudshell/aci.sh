@@ -2,7 +2,7 @@
 az group list -o table
 
 # Create new resource group
-az group create --location eastus --name ignitethetour
+az group create --location uksouth --name ignitethetour
 
 # Create an Azure App Service Plan
 az appservice plan create --name ignitethetourPlan --resource-group ignitethetour --sku FREE
