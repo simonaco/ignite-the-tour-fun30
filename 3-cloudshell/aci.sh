@@ -1,6 +1,9 @@
 # List existing resource groups
 az group list -o table
 
+# List locations 
+az account list-locations -o table
+
 # Create new resource group
 az group create --location uksouth --name ignitethetour
 
