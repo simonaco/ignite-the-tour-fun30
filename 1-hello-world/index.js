@@ -1,10 +1,11 @@
 const http = require('http');
 const figlet = require('figlet');
+
 const port = process.env.PORT || 3000;
 
 const handler = (req, res) => {
   console.log('Server received request.');
-  message = 'Hello Ignite | The Tour';
+  const message = 'Hello Ignite | The Tour';
   figlet(message, (err, data) => {
     if (err) {
       console.log('Something went wrong... ');
